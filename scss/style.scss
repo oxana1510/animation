@@ -53,8 +53,8 @@
 	opacity: 1;
 }
 50%{
-	-webkit-transform: translate(20rem, 8rem) scale(0.4, 0.4);
-	        transform: translate(20rem, 8rem) scale(0.4, 0.4);
+	-webkit-transform: translate(100%,50%) scale(0.4, 0.4);
+	        transform: translate(100%,50%) scale(0.4, 0.4);
 	opacity: 0;
 }
 }
@@ -65,8 +65,8 @@
 	opacity: 1;
 }
 50%{
-	-webkit-transform: translate(20rem, 8rem) scale(0.4, 0.4);
-	        transform: translate(20rem, 8rem) scale(0.4, 0.4);
+	-webkit-transform: translate(100%,50%) scale(0.4, 0.4);
+	        transform: translate(100%, 50%) scale(0.4, 0.4);
 	opacity: 0;
 }
 }
@@ -79,8 +79,8 @@
 }
 50%{
 	background: -webkit-linear-gradient(60deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
+	background: -o-linear-gradient(60deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
 	background: linear-gradient(30deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
-	
 }
 }
 @keyframes bg{
@@ -300,6 +300,8 @@ p{
 .meter{
 	padding: 1.5rem 0 1rem 0;
 }
+
+
 @media screen and (max-width: 460px){
 	:root{
 		font-size: 8px;
