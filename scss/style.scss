@@ -48,8 +48,8 @@
 }
 @-webkit-keyframes sun-close{
 0%{
-	-webkit-transform: translate(0, 0) skale(1, 1);
-	        transform: translate(0, 0) skale(1, 1);
+	-webkit-transform: translate(0, 0) scale(1, 1);
+	        transform: translate(0, 0) scale(1, 1);
 	opacity: 1;
 }
 50%{
@@ -60,8 +60,8 @@
 }
 @keyframes sun-close{
 0%{
-	-webkit-transform: translate(0, 0) skale(1, 1);
-	        transform: translate(0, 0) skale(1, 1);
+	-webkit-transform: translate(0, 0) scale(1, 1);
+	        transform: translate(0, 0) scale(1, 1);
 	opacity: 1;
 }
 50%{
