@@ -41,8 +41,8 @@
 	background-size: cover;
 	width: 13.7rem;
 	height: 14rem;
-	-webkit-animation: sun-close 6s ease-in infinite;
-	        animation: sun-close 6s ease-in infinite;
+	-webkit-animation: sun-close 6s ease-out infinite;
+	        animation: sun-close 6s ease-out infinite;
 }
 @-webkit-keyframes sun-close{
 0%{
@@ -104,8 +104,8 @@
 	background-size: cover;
 	width: 11.4rem;
 	height: 10.7rem;
-	 -webkit-animation: moon-close 6s ease-in infinite;
-	         animation: moon-close 6s ease-in infinite;
+	 -webkit-animation: moon-close 6s ease-out infinite;
+	         animation: moon-close 6s ease-out infinite;
 }
 @-webkit-keyframes moon-close{
 0%{
@@ -162,8 +162,8 @@ img{
 	margin: auto;
 	padding-top: 1rem;
 	overflow: hidden;
-	-webkit-animation: arrow-direction 6s linear infinite;
-	        animation: arrow-direction 6s linear infinite;
+	-webkit-animation: arrow-direction 5.5s ease-out infinite;
+	        animation: arrow-direction 5.5s ease-out infinite;
 .icon-arrow{
 	background: url(../img/icon-arrow.svg) no-repeat;
 	background-size: cover;
@@ -207,9 +207,9 @@ img{
 	-webkit-transform: translate(0, 0);
 	        transform: translate(0, 0);
 }
-1%{
-	-webkit-transform: translate(0, 100%);
-	        transform: translate(0, 100%);
+100%{
+	-webkit-transform: translate(0, 200%);
+	        transform: translate(0, 200%);
 }
 }
 @keyframes arrow{
@@ -217,9 +217,9 @@ img{
 	-webkit-transform: translate(0, 0);
 	        transform: translate(0, 0);
 }
-1%{
-	-webkit-transform: translate(0, 100%);
-	        transform: translate(0, 100%);
+100%{
+	-webkit-transform: translate(0, 200%);
+	        transform: translate(0, 200%);
 }
 }
 .device-block{
@@ -260,7 +260,7 @@ p{
 	-webkit-transform-origin: 50% 50%;
 	        transform-origin: 50% 50%;
 }
-100%{
+50%{
 	-webkit-transform: rotate(-360deg);
 	        transform: rotate(-720deg);
 	-webkit-transform-origin: 50% 50%;
@@ -279,16 +279,6 @@ p{
 	        transform: rotate(-720deg);
 	-webkit-transform-origin: 50% 50%;
 	        transform-origin: 50% 50%;
-}
-}
-@keyframes arrow{
-0%{
-	-webkit-transform: translate(0, 0);
-	        transform: translate(0, 0);
-}
-100%{
-	-webkit-transform: translate(0, 100%);
-	        transform: translate(0, 100%);
 }
 }
 .electricrod{
