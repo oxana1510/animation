@@ -33,8 +33,8 @@
 	background: -webkit-linear-gradient(135deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	background: -o-linear-gradient(135deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	background: linear-gradient(-45deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
-	-webkit-animation: bg 6s ease-in infinite;
-	        animation: bg 6s ease-in infinite;
+	-webkit-animation: bg 6s ease-out infinite;
+	        animation: bg 6s ease-out infinite;
 .sun{
 	position:absolute;
 	top: -2rem;
@@ -43,54 +43,55 @@
 	background-size: cover;
 	width: 13.7rem;
 	height: 14rem;
+	-webkit-animation-fill-mode: 
+		forwards;animation-fill-mode: forwards;
 	-webkit-animation: sun-close 6s ease-out infinite;
 	        animation: sun-close 6s ease-out infinite;
 }
 @-webkit-keyframes sun-close{
-0%{
+10%, 20%, 30%, 40%{
 	-webkit-transform: translate(0, 0) scale(1, 1);
 	        transform: translate(0, 0) scale(1, 1);
 	opacity: 1;
 }
-50%{
+0%, 50%,100%{
 	-webkit-transform: translate(100%,50%) scale(0.4, 0.4);
 	        transform: translate(100%,50%) scale(0.4, 0.4);
 	opacity: 0;
 }
 }
 @keyframes sun-close{
-0%{
+10%, 20%, 30%, 40%{
 	-webkit-transform: translate(0, 0) scale(1, 1);
 	        transform: translate(0, 0) scale(1, 1);
 	opacity: 1;
 }
-50%{
+0%, 50%,100%{
 	-webkit-transform: translate(100%,50%) scale(0.4, 0.4);
 	        transform: translate(100%, 50%) scale(0.4, 0.4);
 	opacity: 0;
 }
 }
 @-webkit-keyframes bg{
-0%{
+10%, 20%, 30%, 40%{
 	background: -webkit-linear-gradient(135deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	background: -o-linear-gradient(135deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	background: linear-gradient(-45deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
-	
 }
-50%{
+0%, 50%,100%{
 	background: -webkit-linear-gradient(60deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
 	background: -o-linear-gradient(60deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
 	background: linear-gradient(30deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
 }
 }
 @keyframes bg{
-0%{
+10%, 20%, 30%, 40%{
 	background: -webkit-linear-gradient(135deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	background: -o-linear-gradient(135deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	background: linear-gradient(-45deg, #60cdff 10%, #64ceff 15%, #6ed1ff 25%, #92ddff 50%, #abe5ff 60%, #c8eeff 70%, #ddf4ff 80%, #ecf9ff 85%, #f4fcff 90%);
 	
 }
-50%{
+0%, 50%,100%{
 	background: -webkit-linear-gradient(60deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
 	background: -o-linear-gradient(60deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
 	background: linear-gradient(30deg, #132f3c 20%, #4a5f69 50%, #99a5aa 100%);
@@ -106,41 +107,33 @@
 	background-size: cover;
 	width: 11.4rem;
 	height: 10.7rem;
+	-webkit-animation-fill-mode: 
+		forwards;animation-fill-mode: forwards;
 	 -webkit-animation: moon-close 6s ease-out infinite;
 	         animation: moon-close 6s ease-out infinite;
 }
 @-webkit-keyframes moon-close{
-0%{
+0%, 50%, 100%{
 	-webkit-transform: translate(0, 0) scale(0.5, 0.5);
 	        transform: translate(0, 0) scale(0.5, 0.5);
 	opacity: 0;
 }
-50%{
-	 -webkit-transform: translate(100%, -50%) scale(1, 1);
-	         transform: translate(100%, -50%) scale(1, 1);
+60%, 70%, 80%, 90%{
+	 -webkit-transform: translate(150%, -50%) scale(1, 1);
+	         transform: translate(150%, -50%) scale(1, 1);
 	 opacity: 1;
-}
-90%, 100%{
-	 -webkit-transform:  translate(0, 0) scale(0.5, 0.5);
-	         transform:  translate(0, 0) scale(0.5, 0.5);
-	 opacity: 0;
 }
 }
 @keyframes moon-close{
-0%{
+0%, 50%, 100%{
 	-webkit-transform: translate(0, 0) scale(0.5, 0.5);
 	        transform: translate(0, 0) scale(0.5, 0.5);
 	opacity: 0;
 }
-50%{
-	 -webkit-transform: translate(100%, -50%) scale(1, 1);
-	         transform: translate(100%, -50%) scale(1, 1);
+60%, 70%, 80%, 90%{
+	 -webkit-transform: translate(150%, -50%) scale(1, 1);
+	         transform: translate(150%, -50%) scale(1, 1);
 	 opacity: 1;
-}
-90%, 100%{
-	 -webkit-transform:  translate(0, 0) scale(0.5, 0.5);
-	         transform:  translate(0, 0) scale(0.5, 0.5);
-	 opacity: 0;
 }
 }
 .house{
@@ -164,8 +157,8 @@ img{
 	margin: auto;
 	padding-top: 1rem;
 	overflow-y: hidden;
-	-webkit-animation: arrow-direction 5.5s ease-out infinite;
-	        animation: arrow-direction 5.5s ease-out infinite;
+	-webkit-animation: arrow-direction 6s ease-in infinite;
+	        animation: arrow-direction 6s ease-in infinite;
 .icon-arrow{
 	background: url(../img/icon-arrow.svg) no-repeat;
 	background-size: cover;
@@ -177,13 +170,11 @@ img{
 }
 }
 @-webkit-keyframes arrow-direction{
-0%, 50%{
+11%, 20%, 30%, 40%, 50%{
 	-webkit-transform: rotate(0);
 	        transform: rotate(0);
-	-webkit-transform-origin: 50% 50%;
-	        transform-origin: 50% 50%;
 }
-51%, 100%{
+0%, 10%, 51%,100%{
 	-webkit-transform: rotate(180deg);
 	        transform: rotate(180deg);
 	-webkit-transform-origin: 50% 50%;
@@ -191,13 +182,11 @@ img{
 }
 }
 @keyframes arrow-direction{
-0%, 50%{
+11%, 20%, 30%, 40%, 50%{
 	-webkit-transform: rotate(0);
 	        transform: rotate(0);
-	-webkit-transform-origin: 50% 50%;
-	        transform-origin: 50% 50%;
 }
-51%, 100%{
+0%, 10%, 51%,100%{
 	-webkit-transform: rotate(180deg);
 	        transform: rotate(180deg);
 	-webkit-transform-origin: 50% 50%;
@@ -260,12 +249,10 @@ p{
 0%{
 	-webkit-transform: rotate(0);
 	        transform: rotate(0);
-	-webkit-transform-origin: 50% 50%;
-	        transform-origin: 50% 50%;
 }
 50%{
-	-webkit-transform: rotate(-360deg);
-	        transform: rotate(-720deg);
+	-webkit-transform: rotate(720deg);
+	        transform: rotate(720deg);
 	-webkit-transform-origin: 50% 50%;
 	        transform-origin: 50% 50%;
 }
@@ -274,12 +261,10 @@ p{
 0%{
 	-webkit-transform: rotate(0);
 	        transform: rotate(0);
-	-webkit-transform-origin: 50% 50%;
-	        transform-origin: 50% 50%;
 }
 50%{
-	-webkit-transform: rotate(-720deg);
-	        transform: rotate(-720deg);
+	-webkit-transform: rotate(720deg);
+	        transform: rotate(720deg);
 	-webkit-transform-origin: 50% 50%;
 	        transform-origin: 50% 50%;
 }
@@ -300,6 +285,22 @@ p{
 .meter{
 	padding: 1.5rem 0 1rem 0;
 }
+
+.home,
+.meter,
+.grid{
+	-webkit-animation: color-text 6s ease-in infinite;
+	        animation: color-text 6s ease-in infinite;
+}
+@keyframes color-text{
+11%, 40%, 50%{
+	color: #000;
+}
+0%, 10%, 51%, 60%,100%{
+	color:  #fff;
+}
+}
+
 
 
 @media screen and (max-width: 460px){
